@@ -1,0 +1,153 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(37, 36, 36);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+.container{
+    background-color: rgb(248, 248, 246);
+    border-radius: 25px;
+    width: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px 4px rgba(255, 255, 255, 0.5);
+    
+}
+
+#dp img{
+    height: 80%;
+    border-radius: 50%;
+    margin-top: 7vh;
+    border: 4px solid white;
+    box-shadow: 1px 1px 0 5px #4070f4;
+}
+#dp{
+    border-radius:25px 25px 0 0 ;
+    text-align: center;
+    width: 100%;
+    height: 30vh;
+    background-color: #4070f4;
+}
+
+/* Name */
+
+#name{
+    text-align: center;
+    padding: 10px 0 ;
+}
+#name h1{
+    font-size: 30pt;
+    font-weight: 400;
+    margin-bottom:0;
+    margin-top: 10px;
+}
+#name p{
+    margin-top: 0;
+    color: rgb(111, 111, 111);
+}
+
+/* Social */
+
+#social{
+    display: flex;
+    justify-content:space-evenly;
+    gap: 30px;
+    
+}
+#social img{
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+}
+#social img:hover{
+    box-shadow: 0 0 5px 1px rgb(111, 111, 111);
+    opacity: 90%;
+}
+
+/*buttons*/
+#button{
+    display: flex;
+    justify-content: center ;
+    gap: 40px;
+    margin: 15px;
+    width: 100%;
+}
+
+#button button{
+    background-color: #4070f4;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    border-style:hidden;
+    font-weight: bolder;
+    transition-duration: 0.3s;
+}
+
+#button button:hover{
+    background-color: transparent;
+    color: #4070f4;
+    box-shadow: 0px 0px 5px 1px #4070f4bd;
+}
+
+#button button:active{
+    background-color: rgba(210, 209, 209, 0.484);
+    color: rgba(0, 0, 0, 0.649);
+    box-shadow: 0px 0px 5px 1px rgb(210, 209, 209);
+}
+
+/*like share comment ( lsc ) */
+
+#lsc{
+    display: flex;
+    justify-content: center ;
+    height: 30px;
+    margin: 10px;
+    background-color: grey;
+    gap: 1px;
+}
+#lsc div{
+    display: flex;
+    align-items: center;
+    gap :5px;
+    background-color:rgb(248, 248, 246);
+    padding :5px 20px;
+}
+#lsc button{
+    display: flex;
+    align-items: center;
+    gap :2px;
+    height: 30px;
+    padding: 17px 10px;
+    border-radius: 25px;
+    background-color:rgb(248, 248, 246);
+    border-style: hidden;
+    transition-duration: 0.5s;
+}
+#lsc svg{
+    background-color: rgb(248, 248, 246);
+}
+#lsc button:hover , #lsc button svg:hover{
+    color: rgba(255, 0, 0,  0.6);
+    fill: rgba(255, 0, 0, 0.6);
+}
+#lsc button:hover{
+    box-shadow: 0 0 5px 0px rgba(255, 0, 0, 0.211);
+}
+#like{
+    height:25px;
+}
+#comment{
+    height: 20px;
+}
+#share{
+height: 20px;
+}
+
+
+
